@@ -1,0 +1,221 @@
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing:border-box;
+
+}
+
+img{
+    scale: 1;
+}
+
+html,body{
+height:100%;
+width:100%;
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 80%;
+    appearance: button;
+    background-color: #f6d51c;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-bottom: 50px;
+   }
+   
+   button:after {
+    background-clip: padding-box;
+    background-color: #efff0d;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+   }
+   
+   button:main, button:focus {
+    user-select: auto;
+   }
+   
+   button:hover:not(:disabled) {
+    filter: brightness(1.1);
+   }
+   
+   button:disabled {
+    cursor: auto;
+   }
+   
+   button:active:after {
+    border-width: 0 0 0px;
+   }
+   
+   button:active {
+    padding-bottom: 10px;
+   }
+
+
+   body {
+    background-color: black; /* Updated background color */
+    color: #fff;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../i.pinimg.com/736x/85/ee/1e/85ee1e95be19840761005b9e5ab5ff0a.jpg);
+}
+
+   
+   #container {
+       display: flex;
+       justify-content: space-between;
+       flex-direction: column;
+       align-items: center;
+       height: 100vh;
+       width: 100%;
+       position: relative;
+   }
+   
+   #rocket {
+       
+       position: absolute;
+       bottom: 0;
+       transition: bottom 1s linear;
+   }
+   
+   #randomNumber {
+       font-size: 98px;
+       font-weight: bold;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       opacity: 1;
+       transition: opacity 1s ease-in-out;
+   }
+   
+  
+   .card {
+    height: 40vw;
+    
+    width: 95%;
+    display: flex;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgb(26, 26, 26);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+  }
+  
+  .cardimg {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    padding: 10px;
+    width: 40%;
+    height: 90%;
+    background-color: rgb(26, 26, 26);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .cardimg img {
+    max-width: 80%;
+    max-height: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+  }
+  
+  .cardinfo {
+    padding: 10px;
+    width: 60%;
+    height: 90%;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cardinfo h5 {
+    text-align: left;
+    margin-top:40px;
+  }
+  
+  .card button {
+    width: 100%;
+   
+  }
+  .popup-overlay {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 30vh;
+    max-width: 700px;
+    text-align: center;
+  }
+  
+  .popup-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    padding: 40px;
+    border-radius: 5px;
+    font-size: 3.8vw;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  #closePopup {
+    margin-top: 10px;
+  }
+  

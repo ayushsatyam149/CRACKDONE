@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from diuwinvippredictor.top/ by HTTrack Website Copier/3.x [XR&CO'2017], Wed, 04 Dec 2024 12:17:28 GMT -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Protected Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f3f3f3;
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 300px;
+    }
+    input[type="password"], button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .message {
+      margin-top: 10px;
+      font-size: 14px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Password Protected</h2>
+  <form id="passwordForm">
+    <input type="password" id="password" placeholder="Enter Password" required>
+    <button type="button" id="submitBtn">Enter</button>
+    <div id="message" class="message"></div>
+  </form>
+</div>
+
+<script>
+  document.getElementById('submitBtn').addEventListener('click', function () {
+    const password = document.getElementById('password').value;
+    const message = document.getElementById('message');
+
+    if (password === 'CRACK') {
+      // Redirect to Game.html
+      window.location.href ='Game.html';
+    } else {
+      // Display error message
+      message.textContent = 'Access Denied: Incorrect Password!';
+    }
+  });
+</script>
+
+</body>
+
+<!-- Mirrored from diuwinvippredictor.top/ by HTTrack Website Copier/3.x [XR&CO'2017], Wed, 04 Dec 2024 12:17:29 GMT -->
+</html>
